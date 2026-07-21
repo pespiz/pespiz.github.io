@@ -2,5 +2,4 @@
 AGENTS.md
 CLAUDE.md
 dist/
-node_module/
-
+node_modules/
