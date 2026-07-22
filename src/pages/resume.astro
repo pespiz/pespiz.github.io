@@ -1,342 +1,412 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-
 <Layout title="Miguel Morales | Resume">
-
-<main class="max-w-5xl mx-auto px-6 py-16">
-
-
-<!-- Header -->
-
-<section class="text-center mb-16">
-
-<h1
-class="
-text-5xl
-font-bold
-text-rose
-"
->
-Miguel Morales
-</h1>
-
-
-<p
-class="
-mt-4
-text-2xl
-text-mauve
-"
->
-Software Engineer / Engineering Lead / Game Developer
-</p>
-
-
-<p
-class="
-mt-6
-text-white/80
-max-w-3xl
-mx-auto
-leading-relaxed
-"
->
-Software engineer specializing in Unity, C#, and gameplay systems.
-Experienced building and shipping interactive products from concept
-to production.
-</p>
-
-
-<div class="mt-8">
-
-<a
-href="/resume.pdf"
-class="
-bg-rose
-text-midnight
-font-bold
-px-6
-py-3
-rounded-xl
-hover:opacity-80
-transition
-"
->
-Download Resume PDF
-</a>
-
-</div>
-
-</section>
-
-
-
-<!-- Skills -->
-
-<section class="mb-16">
-
-
-<h2
-class="
-text-3xl
-font-bold
-text-rose
-mb-6
-"
->
-Technical Skills
-</h2>
-
-
-<div
-class="
-flex
-flex-wrap
-gap-3
-"
->
-
-{
-[
-"Unity",
-"C#",
-"Gameplay Programming",
-"Mobile Development",
-"Firebase",
-"Analytics",
-"LiveOps",
-"Git",
-"Software Architecture"
-].map(skill => (
-
-<span
-class="
-px-4
-py-2
-rounded-full
-bg-purple/30
-border
-border-purple
-"
->
-{skill}
-</span>
-
-))
-}
-
-</div>
-
-
-</section>
-
-
-<br>
-
-<!-- Experience -->
-
-<section class="mb-16">
-
-
-<h2
-class="
-text-3xl
-font-bold
-text-rose
-mb-6
-"
->
-Experience
-</h2>
-
-
-
-<div
-class="
-bg-purple/20
-border
-border-purple
-rounded-2xl
-p-6
-"
->
-
-
-<h3
-class="
-text-2xl
-font-bold
-"
->
-Software Engineer
-</h3>
-
-
-<p
-class="
-text-mauve
-mt-1
-"
->
-Company Name · Location · Year - Present
-</p>
-
-
-<ul
-class="
-mt-5
-space-y-3
-text-white/80
-list-disc
-list-inside
-"
->
-
-<li>
-Built and shipped gameplay systems using Unity and C#.
-</li>
-
-<li>
-Designed scalable systems for progression, monetization,
-and player engagement.
-</li>
-
-<li>
-Collaborated across engineering, design, and product
-to deliver production features.
-</li>
-
-</ul>
-
-
-</div>
-
-
-</section>
-
-
-<br>
-
-<!-- Selected Projects -->
-
-<section class="mb-16">
-
-
-<h2
-class="
-text-3xl
-font-bold
-text-rose
-mb-6
-"
->
-Selected Projects
-</h2>
-
-
-
-<div
-class="
-space-y-6
-"
->
-
-
-<div
-class="
-bg-purple/20
-border
-border-purple
-rounded-2xl
-p-6
-"
->
-
-<h3
-class="
-text-2xl
-font-bold
-"
->
-Word Puzzle Adventure
-</h3>
-
-
-<p
-class="
-text-mauve
-mt-1
-"
->
-Unity · C# · Mobile
-</p>
-
-
-<p
-class="
-mt-4
-text-white/80
-"
->
-Developed and shipped a mobile word game including
-gameplay systems, progression, monetization, analytics,
-and live features.
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-<br>
-
-<!-- Education -->
-
-<section>
-
-
-<h2
-class="
-text-3xl
-font-bold
-text-rose
-mb-6
-"
->
-Education
-</h2>
-
-
-<div
-class="
-bg-purple/20
-border
-border-purple
-rounded-2xl
-p-6
-"
->
-
-<h3 class="text-2xl font-bold">
-Degree Name
-</h3>
-
-<p class="mt-2 text-white/80">
-University Name · Year
-</p>
-
-</div>
-
-
-</section>
-
-
-</main>
-
+   <main class="max-w-5xl mx-auto px-6 py-16">
+      <!-- Header -->
+      <section class="text-center mb-16">
+         <h1
+            class="
+            text-5xl
+            font-bold
+            text-rose
+            "
+            >
+            Miguel Morales
+         </h1>
+         <p
+            class="
+            mt-4
+            text-2xl
+            text-mauve
+            "
+            >
+            Software Engineer / Engineering Lead / Game Developer
+         </p>
+         <p
+            class="
+            mt-6
+            text-white/80
+            max-w-3xl
+            mx-auto
+            leading-relaxed
+            "
+            >
+            Software engineer specializing in Unity/C# and Client Architecture.
+            Experienced building and shipping interactive products from concept
+            to production. <br><br>I've been in the games industry for over a decade and wore all sorts of hats: game developer, fullstack engineering, technical lead, manager and, more recently, executive.
+         </p>
+      </section>
+      <!-- Skills -->
+      <section class="mb-16">
+         <h2
+            class="
+            text-3xl
+            font-bold
+            text-rose
+            mb-6
+            "
+            >
+            Skills
+         </h2>
+         <div
+            class="
+            flex
+            flex-wrap
+            gap-3
+            "
+            >
+            {
+            [
+            "Unity",
+            "C#",
+            "Gameplay Programming",
+            "Mobile Development",
+            "Analytics",
+            "Integrations",
+            "mySQL",
+            "unix",
+            "objectiveC",
+            "javascript",
+            "html",
+            "java",
+            "php",
+            "LiveOps",
+            "git",
+            "Software Architecture",
+            "Engineering Leadership",
+            "Mentoring"
+            ].map(skill => (
+            <span
+               class="
+               px-4
+               py-2
+               rounded-full
+               bg-purple/30
+               border
+               border-purple
+               "
+               >
+            {skill}
+            </span>
+            ))
+            }
+         </div>
+      </section>
+      <!-- Experience -->
+      <section class="mb-16">
+         <h2
+            class="
+            text-3xl
+            font-bold
+            text-rose
+            mb-6
+            "
+            >
+            Experience
+         </h2>
+         <div
+            class="
+            bg-purple/20
+            border
+            border-purple
+            rounded-2xl
+            p-6
+            "
+            >
+            <h3
+               class="
+               text-2xl
+               font-bold
+               "
+               >
+               VP of Engineering, Engineering Manager, Principal Engineer
+            </h3>
+            <p
+               class="
+               text-mauve
+               mt-1
+               "
+               >
+               Super Free Games, Inc - San Francisco, CA <i>(2013 - 2024)</i>
+            </p>
+            <ul
+               class="
+               mt-5
+               space-y-3
+               text-white/80
+               list-disc
+               list-inside
+               "
+               >
+               <li>
+                  Founding Engineer of the core systems and process that comprise the infrastructure and products of the company. 
+               </li>
+               <li>
+                  Developed the games themselves, internal tools, liveOps, automation pipelines, release pipelines, analytics, backend, etc.
+               </li>
+               <li>
+                  Joined as a Founding Engineer, became Engineering Lead, Manager and recently and executive position.
+               </li>
+               <li>
+                  Focused on systems architecture, performance optimization and liveOps, as well as mentoring.
+               </li>
+               <li>
+                  The company got acquired on 2021 and once earnout period was over, decided to leave and pursue other interests.
+               </li>
+            </ul>
+         </div>
+         <br>
+         <div
+            class="
+            bg-purple/20
+            border
+            border-purple
+            rounded-2xl
+            p-6
+            "
+            >
+            <h3
+               class="
+               text-2xl
+               font-bold
+               "
+               >
+               Senior Game Developer
+            </h3>
+            <p
+               class="
+               text-mauve
+               mt-1
+               "
+               >
+               Visionaria Games, S de RL - Mexico City, Mexico <i>(2011 - 2012)</i>
+            </p>
+            <ul
+               class="
+               mt-5
+               space-y-3
+               text-white/80
+               list-disc
+               list-inside
+               "
+               >
+               <li>
+                  Developed Web Games for educational purposes.
+               </li>
+               <li>
+                  Led a team of 3 engineers and maintained good coding practices, good orchestration schemas and interoperability between client and server(backend)
+               </li>
+               <li>
+                  Mostly worked on client development in ActionScript and native (objectiveC)
+               </li>
+               <li>
+                  Left before a full year to pursue a bigger opportunity.
+               </li>
+            </ul>
+         </div>
+         <br>
+         <div
+            class="
+            bg-purple/20
+            border
+            border-purple
+            rounded-2xl
+            p-6
+            "
+            >
+            <h3
+               class="
+               text-2xl
+               font-bold
+               "
+               >
+               Fullstack Engineer
+            </h3>
+            <p
+               class="
+               text-mauve
+               mt-1
+               "
+               >
+               Digital Chocolate - Mexicali, Mexico <i>(2011)</i>
+            </p>
+            <ul
+               class="
+               mt-5
+               space-y-3
+               text-white/80
+               list-disc
+               list-inside
+               "
+               >
+               <li>
+                  Developed tools and ported the Company's Game to the internal Network of the Company
+               </li>
+               <li>
+                  Constant communication with the Helsinki and Barcelona studios for porting and maintenance of the games.
+               </li>
+               <li>
+                  Fullstack development with ActionScript, PhP, Facebook Integrations, Unix, MySQL.
+               </li>
+               <li>
+                  Left before a full year to pursue a different opportunity in my hometown.
+               </li>
+            </ul>
+         </div>
+         <br>
+         <div
+            class="
+            bg-purple/20
+            border
+            border-purple
+            rounded-2xl
+            p-6
+            "
+            >
+            <h3
+               class="
+               text-2xl
+               font-bold
+               "
+               >
+               Engineer and GameDev
+            </h3>
+            <p
+               class="
+               text-mauve
+               mt-1
+               "
+               >
+               IkiGaming S. de R.L. - Mexico City, Mexico <i>(2009-2010)</i>
+            </p>
+            <ul
+               class="
+               mt-5
+               space-y-3
+               text-white/80
+               list-disc
+               list-inside
+               "
+               >
+               <li>
+                  Fullstack Development of social games for the Facebook Platform.
+               </li>
+               <li>
+                  Worked mainly on ActionScript, Javascript and PhP
+               </li>
+               <li>
+                  Focused on learning good coding practices and design patterns, as well as performance optimization.
+               </li>
+            </ul>
+         </div>
+         <br>
+         <div
+            class="
+            bg-purple/20
+            border
+            border-purple
+            rounded-2xl
+            p-6
+            "
+            >
+            <h3
+               class="
+               text-2xl
+               font-bold
+               "
+               >
+               Cofounder and Entrepreneur
+            </h3>
+            <p
+               class="
+               text-mauve
+               mt-1
+               "
+               >
+               Ignis Nova, S. de R.L. - Mexico City, Mexico <i>(2008-2009)</i>
+            </p>
+            <ul
+               class="
+               mt-5
+               space-y-3
+               text-white/80
+               list-disc
+               list-inside
+               "
+               >
+               <li>
+                  Started a small company to create software with ethical responsibility.
+               </li>
+               <li>
+                  Worked on videogames for rehabilitation, a small social network and networking infrastructure.
+               </li>
+               <li>
+                  Left to pursue my passion of working on videogames.
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- Education -->
+      <section>
+         <h2
+            class="
+            text-3xl
+            font-bold
+            text-rose
+            mb-6
+            "
+            >
+            Education
+         </h2>
+         <div
+            class="
+            bg-purple/20
+            border
+            border-purple
+            rounded-2xl
+            p-6
+            "
+            >
+            <h3 class="text-2xl font-bold">
+               Bachelors Degree, Computer Science
+            </h3>
+            <p class="mt-2 text-white/80">
+               Instituto Tecnologico y de Estudios Superiores de Monterrey, Campus Ciudad de Mexico <br><i>(2004 - 2008)</i>
+               <br><br>
+               Studied Software Engineering and CompSci to pursue my dream of creating videogames.
+            </p>
+         </div>
+      </section>
+      <br>
+      <br>
+      <!-- Personal Interests -->
+      <section>
+         <h2
+            class="
+            text-3xl
+            font-bold
+            text-rose
+            mb-6
+            "
+            >
+            Personal Interests
+         </h2>
+         <div
+            class="
+            bg-purple/20
+            border
+            border-purple
+            rounded-2xl
+            p-6
+            "
+            >
+            <p class="mt-2 text-white/80">
+               I love reading and running. Have done multiple marathons and read a lot of about Psychology, Sci-Fi, Philosophy and Programming.
+               <br><br>
+               I like learning new languages. Currently on Japanese and Korean.
+            </p>
+         </div>
+      </section>
+   </main>
 </Layout>
