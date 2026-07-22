@@ -1,0 +1,283 @@
+---
+const {
+    title,
+    description,
+    highlights = [],
+    image,
+    video,
+    google,
+    apple,
+    type = "personal",
+    company,
+    technologies = []
+} = Astro.props;
+
+const isProfessional = type === "professional";
+---
+
+<article
+class="
+rounded-3xl
+overflow-hidden
+bg-purple/20
+border
+border-purple
+shadow-lg
+hover:shadow-xl
+transition
+md:flex
+"
+>
+
+    <!-- Preview (Video or Image) -->
+
+    <div class="md:w-2/5">
+
+        {video ? (
+
+            <video
+                class="
+                w-full
+                h-64
+                md:h-full
+                object-cover
+                "
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src={video} type="video/mp4" />
+            </video>
+
+        ) : image && (
+
+            <img
+                src={image}
+                alt={title}
+                class="
+                w-full
+                h-64
+                md:h-full
+                object-cover
+                "
+            />
+
+        )}
+
+    </div>
+
+
+    <!-- Content -->
+
+    <div
+    class="
+    p-6
+    md:p-8
+    flex
+    flex-col
+    justify-center
+    md:w-3/5
+    ">
+
+        <!-- Badge -->
+
+        <span
+        class={`
+        inline-block
+        w-fit
+        px-3
+        py-1
+        rounded-full
+        text-xs
+        font-bold
+        mb-4
+
+        ${
+            isProfessional
+            ? "bg-rose text-midnight"
+            : "bg-mauve text-white"
+        }
+        `}
+        >
+            {
+                isProfessional
+                ? "PROFESSIONAL WORK"
+                : "PERSONAL PROJECT"
+            }
+        </span>
+
+
+        <!-- Title -->
+
+        <h3
+        class="
+        text-2xl
+        font-bold
+        text-rose
+        "
+        >
+            {title}
+        </h3>
+
+
+        <!-- Company -->
+
+        {company && (
+
+            <p
+            class="
+            mt-2
+            text-mauve
+            font-medium
+            "
+            >
+                {company}
+            </p>
+
+        )}
+
+
+        <!-- Description -->
+
+        {highlights.length > 0 ? (
+
+            <ul
+            class="
+            mt-4
+            space-y-2
+            text-white/80
+            leading-relaxed
+            list-disc
+            list-inside
+            "
+            >
+
+                {
+                    highlights.map((item) => (
+
+                        <li>{item}</li>
+
+                    ))
+                }
+
+            </ul>
+
+        ) : (
+
+            <p
+            class="
+            mt-4
+            text-white/80
+            leading-relaxed
+            "
+            >
+                {description}
+            </p>
+
+        )}
+
+
+        <!-- Technologies -->
+
+        {technologies.length > 0 && (
+
+            <div
+            class="
+            mt-5
+            flex
+            flex-wrap
+            gap-2
+            "
+            >
+
+                {
+                    technologies.map((tech) => (
+
+                        <span
+                        class="
+                        px-3
+                        py-1
+                        rounded-full
+                        bg-midnight
+                        border
+                        border-mauve
+                        text-sm
+                        text-white/90
+                        "
+                        >
+                            {tech}
+                        </span>
+
+                    ))
+                }
+
+            </div>
+
+        )}
+
+
+        <!-- Links -->
+
+        {(google || apple) && (
+
+            <div
+            class="
+            mt-6
+            flex
+            flex-wrap
+            gap-3
+            "
+            >
+
+                {google && (
+
+                    <a
+                    href={google}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="
+                    bg-rose
+                    text-midnight
+                    font-bold
+                    px-4
+                    py-2
+                    rounded-xl
+                    hover:opacity-80
+                    transition
+                    "
+                    >
+                        Google Play
+                    </a>
+
+                )}
+
+                {apple && (
+
+                    <a
+                    href={apple}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="
+                    bg-rose
+                    text-midnight
+                    font-bold
+                    px-4
+                    py-2
+                    rounded-xl
+                    hover:opacity-80
+                    transition
+                    "
+                    >
+                        App Store
+                    </a>
+
+                )}
+
+            </div>
+
+        )}
+
+    </div>
+
+</article>

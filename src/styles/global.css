@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-rose: #EBE8DB;
+  --color-mauve: #D76C82;
+  --color-purple: #6594B1;
+  --color-midnight: #213C51;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+}

@@ -1,17 +1,137 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Miguel Morales | Gameplay Engineer">
+
+<section
+class="
+min-h-[80vh]
+flex
+items-center
+justify-center
+px-6
+"
+>
+
+<div
+class="
+max-w-4xl
+"
+>
+
+<!-- Centered identity -->
+
+<div class="text-center">
+
+<p
+class="
+text-mauve
+text-xl
+font-medium
+mb-4
+"
+>
+Software Engineer / Engineering Lead / Game Developer
+</p>
+
+<!--
+<h1
+class="
+text-6xl
+md:text-7xl
+font-bold
+text-rose
+leading-tight
+"
+>
+Miguel Morales
+</h1>
+-->
+</div>
+
+
+<!-- Left aligned description -->
+
+<div
+class="
+mt-8
+max-w-3xl
+mx-auto
+text-left
+"
+>
+
+<p
+class="
+text-xl
+text-white/80
+leading-relaxed
+"
+>
+As a game developer, I love making games that bring rich and meaningful experiences to players all over the world. Since I was young, I knew  I wanted to honor the Games that had brought so much fun to my childhood.
+
+<br><br>As an Engineer, I love solving complex problems with efficient solutions. I'm a strong believer that anybody can code but it's an engineer's job to "create simple solutions for complex problems, not the other way around". In particular, I love focusing on Systems Development, Performance Optimization and Bug Fixing, as I've seen these 3 areas really help ship a product. 
+
+<br><br>As a technical lead, I love developing the talent of my team and being helpful to those around me. Sometimes that is by providing a helping hand and others leading the way with your own code and "getting your hands dirty". 
+
+<br><br>Drop by the Portfolio section to see some fun products I've worked on :)
+</p>
+
+</div>
+
+
+<!-- Buttons centered -->
+
+<div
+class="
+mt-10
+flex
+justify-center
+gap-4
+"
+>
+
+<a
+href="/projects"
+class="
+px-6
+py-3
+rounded-xl
+bg-rose
+text-midnight
+font-bold
+hover:opacity-80
+transition
+"
+>
+View Projects
+</a>
+
+
+<a
+href="https://github.com"
+target="_blank"
+class="
+px-6
+py-3
+rounded-xl
+border
+border-rose
+text-rose
+hover:bg-rose
+hover:text-midnight
+transition
+"
+>
+GitHub
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+</Layout>

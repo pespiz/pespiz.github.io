@@ -1,0 +1,175 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<Layout title="Miguel Morales | Gameplay Engineer">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center">
+
+    <p class="text-mauve text-lg mb-4">
+        Software Engineer · Gameplay Programmer
+    </p>
+
+    <h1 class="text-6xl md:text-7xl font-bold text-rose leading-tight">
+        Miguel Morales
+    </h1>
+
+    <p class="mt-8 max-w-2xl text-xl text-white/80 leading-relaxed">
+        I build games and interactive experiences using Unity and C#.
+        I specialize in gameplay systems, mobile games, and turning ideas
+        into polished products.
+    </p>
+
+
+    <div class="mt-10 flex gap-4">
+
+        <a
+        href="#projects"
+        class="
+        px-6 py-3
+        rounded-xl
+        bg-rose
+        text-midnight
+        font-bold
+        hover:opacity-80
+        transition
+        ">
+            View Projects
+        </a>
+
+
+        <a
+        href="https://github.com"
+        class="
+        px-6 py-3
+        rounded-xl
+        border
+        border-rose
+        text-rose
+        hover:bg-rose
+        hover:text-midnight
+        transition
+        ">
+            GitHub
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="py-24">
+
+<h2 class="text-4xl font-bold text-rose mb-8">
+    About Me
+</h2>
+
+
+<div class="
+bg-purple/20
+border
+border-purple
+rounded-2xl
+p-8
+max-w-3xl
+">
+
+<p class="text-lg leading-relaxed text-white/90">
+
+I'm a software engineer passionate about game development.
+I've worked on mobile games, gameplay systems, progression,
+monetization, analytics, and live products.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section class="py-24">
+
+<h2 class="text-4xl font-bold text-rose mb-8">
+Skills
+</h2>
+
+
+<div class="flex flex-wrap gap-3">
+
+{
+[
+"Unity",
+"C#",
+"Gameplay Programming",
+"Mobile Development",
+"Firebase",
+"Analytics",
+"LiveOps",
+"Game Systems"
+].map(skill => (
+    <span
+    class="
+    px-4 py-2
+    rounded-full
+    bg-mauve/30
+    border
+    border-mauve
+    ">
+        {skill}
+    </span>
+))
+}
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="py-24">
+
+<h2 class="text-4xl font-bold text-rose mb-10">
+Projects
+</h2>
+
+
+<ProjectCard
+title="Word Puzzle Adventure"
+description="A relaxing mobile word game built with Unity and C#. Designed and developed gameplay systems, progression, monetization, analytics, and live features."
+image="/images/wordgame.png"
+google="https://play.google.com"
+apple="https://apps.apple.com"
+/>
+
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="py-24 text-center">
+
+<h2 class="text-4xl font-bold text-rose">
+Let's Connect
+</h2>
+
+<p class="mt-5 text-white/80">
+Interested in building great games together?
+</p>
+
+</section>
+
+
+</div>
+
+</Layout>
